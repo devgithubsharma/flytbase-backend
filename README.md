@@ -1,5 +1,7 @@
 # flytbase-backend
 
+## Use Master Branch
+
 ### Project Overview:
 
 *This project simulates a drone's flight along a predefined path (a series of waypoints) and logs the flight's progress.  The drone's flight path is defined by a "mission," which contains an array of waypoints. Each waypoint has a latitude, longitude, and altitude. The simulation calculates the distance between waypoints, estimates the travel time based on the drone's speed, and logs the drone's "arrival" at each waypoint.*
