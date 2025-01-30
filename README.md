@@ -64,3 +64,39 @@
 
 The project also includes functionality to stop the simulation.  This is important if a mission needs to be aborted before it completes all waypoints.  When a mission is stopped, the simulation timer is cleared, and the flight log is updated with the end time.
 
+#### Start Server:
+
+The server will run at : http://localhost:8000
+
+Terminal commands: 
+
+1- node app.js
+
+##### 2- API Endpoints: 
+
+1- '/api/users/register'  => For user registration
+
+2- '/api/users/login' => For user login
+
+3- '/api/drones/create' => To create drones (authorization required)
+
+4- '/api/drones/getDroneByUserId' => Fetch drones (authorization required)
+
+5- '/api/drones/update' => Update drones (authorization required)
+
+6- '/api/drones/delete' => Delete Drones (authorization required)
+
+7- '/api/missions/create' => Create Mission (authorization required)
+
+8- '/api/missions/getMission' => Fetch Mission (authorization required)
+
+9- '/api/missions/delete' => Delete Mission (authorization required)
+
+10- '/api/missions/:missionId/:droneId/startMission' => Start Mission (authorization required)
+
+11- '/api/missions/:missionId/stopMission' => Stop Mission (authorization required)
+
+12- '/api/:flightId/flightLogs' => To Fetch FLightLogs 
+
+
+
