@@ -66,6 +66,13 @@
 
 The project also includes functionality to stop the simulation.  This is important if a mission needs to be aborted before it completes all waypoints.  When a mission is stopped, the simulation timer is cleared, and the flight log is updated with the end time.
 
+## 🏗️ Tech Stack
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB, Mongoose
+- **Authentication**: JWT (JSON Web Tokens)
+- **Environment Variables**: dotenv
+
+
 #### Start Server:
 
 The server will run at : http://localhost:8000
