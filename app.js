@@ -2,11 +2,11 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser')
 const connectDB = require('./db'); 
-const userRoutes = require('../server/controllers/usersController');
-const droneRoutes = require('../server/controllers/droneController');
-const missionRoutes = require('../server/controllers/missionContoller');
-const flightLogRoutes = require('../server/controllers/flightLogController'); 
-const authMiddleware = require('../server/middleware/authmiddleware'); 
+const userRoutes = require('./controllers/usersController');
+const droneRoutes = require('./controllers/droneController');
+const missionRoutes = require('./controllers/missionContoller');
+const flightLogRoutes = require('./controllers/flightLogController'); 
+const authMiddleware = require('./middleware/authmiddleware'); 
 const PORT = 8000;
 
 const app = express();
