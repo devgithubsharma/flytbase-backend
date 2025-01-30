@@ -46,4 +46,21 @@
 
 3- Creates a new flight log, initializing it with the first waypoint.
 
+4- Iterates through the remaining waypoints:
+
+   a- Calculates the distance between the current waypoint and the next waypoint.
+   
+   b- Calculates the estimated travel time based on the distance and speed.
+   
+   c- "Waits" for the travel time (simulated using setTimeout).
+   
+   d- Logs the "arrival" at the next waypoint (including the time, latitude, longitude, and altitude) in the flight log.
+   
+   e- Updates the total distance traveled in the flight log.
+
+5- When all waypoints have been processed, the simulation is complete, and the flight log is updated with the end time.
+
+##### Stopping the Simulation: 
+
+The project also includes functionality to stop the simulation.  This is important if a mission needs to be aborted before it completes all waypoints.  When a mission is stopped, the simulation timer is cleared, and the flight log is updated with the end time.
 
